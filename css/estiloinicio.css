@@ -1,0 +1,93 @@
+.imgprincipal>img{
+  width: 85%;
+  box-shadow: 2px 2px #02010a;
+}
+.imgprincipal{
+  background-color: #82c3a6;
+  width: 900px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.imgsecundarias{
+  background-color: #d5c75f;
+  width: 900px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/*.imgsecundarias>div>a>img{
+  width: 85%;
+  box-shadow: 2px 2px #02010a;
+}*/
+.imgsecundarias{
+  display: flex;
+  flex-direction: row;
+}
+.imgpaisajes, .imgretratos{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+  color: black;
+}
+
+.imgpaisajes{
+  margin-left: 1%;
+}
+.imgretratos{
+  margin-left: 2%;
+}
+figcaption>a{
+  color: black;
+}
+.imgpaisajes>a img{
+  width: 85%;
+  border: 1px solid #02010a;
+  box-shadow: 2px 2px #02010a;
+  transition: all 1s ease;
+}
+.imgpaisajes>a img:hover{
+  transform: rotate(10deg);
+  border: 2px solid #82c3a6;
+  box-shadow: 2px 2px #82c3a6;
+}
+
+.imgretratos>a img{
+  width: 85%;
+  border: 1px solid #02010a;
+  box-shadow: 2px 2px #02010a;
+  transition: all 1s ease;
+}
+.imgretratos>a img:hover{
+  transform: translate(20px,-5px);
+  border: 2px solid #82c3a6;
+  box-shadow: 2px 2px #82c3a6;
+}
+
+@media screen and (max-width: 900px) {
+  .imgprincipal{
+    width: 100%;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+  }
+  .imgsecundarias{
+    width: 100%;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+  }
+}
+
+@media screen and (max-width: 662px) {
+  .imgprincipal{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .imgsecundarias{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .imgpaisajes{
+    margin-bottom: 30px;
+  }
+}
